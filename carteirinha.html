@@ -70,8 +70,10 @@
     <h2>PUC-SP</h2>
   </header>
 
-  <main>
-    <h1>Carteira Estudantil</h1>
+ <main style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+  <!-- Área de texto -->
+  <div style="flex: 1 1 300px;">
+    <h1 style="color: #00205B;">Carteira Estudantil</h1>
 
     <div class="info"><strong>Nome:</strong> Gabriel Campos</div>
     <div class="info"><strong>Data de Nascimento:</strong> 10/11/1995</div>
@@ -84,6 +86,13 @@
     <div class="footer">
       Documento gerado digitalmente para fins de identificação estudantil.
     </div>
-  </main>
+  </div>
+
+  <!-- Foto -->
+  <div style="flex: 0 0 auto;">
+    <img src="foto.jpg" alt="Foto do estudante" style="width: 160px; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  </div>
+</main>
 </body>
 </html>
+
