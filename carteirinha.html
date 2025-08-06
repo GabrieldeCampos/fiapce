@@ -1,85 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carteira Estudantil PUC-SP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carteira Estudantil - PUC-SP</title>
   <style>
-    :root {
-      --fiap-red: #00008B;
-      --fiap-dark: #FFFF00;
-      --fiap-gray: #F5F5F5;
-      --text: #222;
-    }
-
     body {
-      background-color: var(--fiap-gray);
-      font-family: "Segoe UI", sans-serif;
-      color: var(--text);
       margin: 0;
-      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #1a1a1a;
     }
 
-    .container {
-      max-width: 500px;
-      margin: 40px auto;
+    header {
+      background-color: #00205B;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: white;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
       background-color: white;
-      padding: 24px;
+      padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .header h1 {
-      color: var(--fiap-red);
-      font-size: 1.8em;
-      margin-bottom: 8px;
-    }
-
-    .photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--fiap-red);
-      margin-bottom: 16px;
+    h1 {
+      font-size: 1.8rem;
+      color: #00205B;
+      margin-bottom: 1rem;
     }
 
     .info {
-      text-align: left;
-      font-size: 1.05em;
-      line-height: 1.8;
-      margin-top: 24px;
+      margin-bottom: 1rem;
     }
 
-    .label {
-      font-weight: bold;
-      color: var(--fiap-dark);
+    .info strong {
+      display: inline-block;
+      width: 160px;
+      color: #444;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .info strong {
+        width: 100px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>PUC-SP</h1>
-      <p>Carteira Estudantil Digital</p>
-    </div>
+  <header>
+    <img src="PUCSP.png" alt="Logo PUC-SP" />
+    <h2>PUC-SP</h2>
+  </header>
 
-    <!-- 📸 Foto do estudante -->
-    <img src="foto.jpg" alt="Foto do Estudante" class="photo">
+  <main>
+    <h1>Carteira Estudantil</h1>
 
-    <!-- 🧍 Dados -->
-    <div class="info">
-      <p><span class="label">Nome:</span> Gabriel Silva de Campos</p>
-      <p><span class="label">Data de Nascimento:</span> 10/11/1995</p>
-      <p><span class="label">Matrícula:</span> 2025126046</p>
-      <p><span class="label">Curso:</span> Análise e Desenvolvimento de Sistemas</p>
-      <p><span class="label">Início:</span> 15/01/2025</p>
-      <p><span class="label">Término:</span> 03/02/2029</p>
-      <p><span class="label">Instituição:</span> Pontifícia Universidade Católica de São Paulo</p>
-      <p><span class="label">Validade da Carteira:</span> 03/02/2029</p>
+    <div class="info"><strong>Nome:</strong> Gabriel Campos</div>
+    <div class="info"><strong>Data de Nascimento:</strong> 10/11/1995</div>
+    <div class="info"><strong>Número de Matrícula:</strong> 2025123456</div>
+    <div class="info"><strong>Curso:</strong> Ciência da Computação</div>
+    <div class="info"><strong>Instituição:</strong> Pontifícia Universidade Católica de São Paulo</div>
+    <div class="info"><strong>Data de Início:</strong> 15/01/2025</div>
+    <div class="info"><strong>Data de Conclusão:</strong> 03/02/2029</div>
+
+    <div class="footer">
+      Documento gerado digitalmente para fins de identificação estudantil.
     </div>
-  </div>
+  </main>
 </body>
 </html>
-
